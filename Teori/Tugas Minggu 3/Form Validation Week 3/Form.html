@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Form Validation Week 3/style.css" />
+    <title>David Chandra | Form Validasi</title>
+  </head>
+  <body>
+    <header><img src="https://lombasi.telkomuniversity.ac.id/assets/img/logos/logo_telyu_lanskap.png" alt="Logo Telkom University" width="150px" /></header>
+    <nav>
+      <h1>Data Mahasiswa</h1>
+      <ul>
+        <li><a href="#form" class="active">Formulir</a></li>
+        <li><a href="#info">Info</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="informasi">
+          <h2>Telkom University Jakarta</h2>
+          <ol>
+            <li>S1 Desain Komunikasi Visual</li>
+            <li>S1 Teknik Telekomunikasi</li>
+            <li>S1 Teknologi Informasi</li>
+            <li>S1 Sistem Informasi</li>
+          </ol>
+        </div>
+      </aside>
+      <section class="main">
+        <div class="formulir">
+          <form>
+            <table>
+              <tr>
+                <td><p>NIM:</p></td>
+                <td><input type="text" name="nim" id="nim" placeholder="Masukkan NIM anda" /></td>
+              </tr>
+              <tr>
+                <td><p>Nama:</p></td>
+                <td><input type="text" name="nama" id="nama" placeholder="Masukkan nama anda" /></td>
+              </tr>
+              <tr>
+                <td><p>Tgl Lahir (dd-mm-yyyy):</p></td>
+                <td><input type="date" name="tgl_lahir" id="tgl_lahir" /></td>
+              </tr>
+              <tr>
+                <td><p>Jenis Kelamin:</p></td>
+                <td><input type="radio" name="jenis_kelamin" id="jenis_kelamin" value="male" checked /> Male <input type="radio" name="jenis_kelamin" id="jenis_kelamin" value="female" /> Female</td>
+              </tr>
+              <tr>
+                <td><p>Alamat di Jakarta:</p></td>
+                <td><textarea name="alamat" id="alamat" rows="5" cols="20" placeholder="Masukkan alamat anda"></textarea></td>
+              </tr>
+              <tr>
+                <td><p>Tinggal di:</p></td>
+                <td>
+                  <select id="tempat_tinggal">
+                    <option value="-- pilih --" disabled selected>-- pilih --</option>
+                    <option value="Kos/Kontrakan">Kos/Kontrakan</option>
+                    <option value="Rumah Saudara">Rumah Saudara</option>
+                    <option value="Rumah Orang Tua">Rumah Orang Tua</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><p>Plih 2 hobi yang paling disukai:</p></td>
+                <td>
+                  <input type="checkbox" name="hobi" id="hobi" value="Science" /> Science <br />
+                  <input type="checkbox" name="hobi" id="hobi" value="Technology" /> Technology <br />
+                  <input type="checkbox" name="hobi" id="hobi" value="Art" /> Art <br />
+                  <input type="checkbox" name="hobi" id="hobi" value="Sport" /> Sport <br />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button type="submit">Submit</button>
+                  <button type="reset">Reset</button>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </section>
+    </div>
+    <footer>(2025) David Chandra | 103062330056</footer>
+  </body>
+</html>

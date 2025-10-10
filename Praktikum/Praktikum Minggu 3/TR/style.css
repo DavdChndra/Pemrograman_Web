@@ -1,0 +1,86 @@
+h1 {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  margin: auto;
+  gap: 20px;
+  width: 80%;
+  max-width: 1200px;
+}
+.informasiSingkat {
+  background-color: #697565;
+  padding: 20px 40px;
+  border-radius: 10px;
+  color: white;
+}
+.hobiFavorit {
+  background-color: #e2dfd0;
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+.pengalaman {
+  grid-column: 1 / -1;
+  background-color: #3c3d37;
+  padding: 20px 40px;
+  border-radius: 10px;
+  color: white;
+}
+
+hr {
+  border: 1px solid black;
+  margin-top: -10px;
+}
+.informasiSingkat hr,
+.pengalaman hr {
+  border: 1px solid white;
+}
+
+.sosialMedia {
+  margin-top: 30px;
+}
+.sosialMedia a {
+  background-color: white;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.sosialMedia a:hover {
+  background-color: #697565;
+  color: white;
+  border-bottom: 2px solid #181c14;
+}
+
+.hobi {
+  margin-top: 30px;
+  list-style: none;
+  padding-left: 0;
+}
+.hobi li {
+  background: white;
+  margin: 10px 0;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border-bottom: 2px solid #181c14;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.pengalaman ol {
+  margin-top: 30px;
+}
+.pengalaman ol li {
+  margin-bottom: 20px;
+}
+
+.listPengalaman {
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid white;
+  display: inline-block;
+}

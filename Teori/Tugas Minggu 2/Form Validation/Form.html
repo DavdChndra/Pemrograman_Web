@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>David Chandra | Form Validasi</title>
+  </head>
+  <body>
+    <center>
+      <main>
+        <h1>Data Mahasiswa</h1>
+        <div class="formulir">
+          <form action="get">
+            <table>
+              <tr>
+                <td rowspan="8"><img src="https://lombasi.telkomuniversity.ac.id/assets/img/logos/logo_telyu_lanskap.png" alt="Logo Telkom University" width="300px" /></td>
+                <td>NIM:</td>
+                <td><input type="text" name="nim" id="nim" placeholder="Masukkan NIM anda" /></td>
+              </tr>
+              <tr>
+                <td>Nama:</td>
+                <td><input type="text" name="nama" id="nama" placeholder="Masukkan nama anda" /></td>
+              </tr>
+              <tr>
+                <td>Tgl Lahir (dd-mm-yyyy):</td>
+                <td><input type="date" name="tgl_lahir" id="tgl_lahir" /></td>
+              </tr>
+              <tr>
+                <td>Jenis Kelamin:</td>
+                <td><input type="radio" name="jenis_kelamin" id="jenis_kelamin" value="male" checked /> Male <input type="radio" name="jenis_kelamin" id="jenis_kelamin" value="female" /> Female</td>
+              </tr>
+              <tr>
+                <td>Alamat di Jakarta:</td>
+                <td><textarea name="alamat" id="alamat" rows="5" cols="20" placeholder="Masukkan alamat anda"></textarea></td>
+              </tr>
+              <tr>
+                <td>Tinggal di:</td>
+                <td>
+                  <select id="tempat_tinggal">
+                    <option value="-- pilih --" disabled selected>-- pilih --</option>
+                    <option value="Kos/Kontrakan">Kos/Kontrakan</option>
+                    <option value="Rumah Saudara">Rumah Saudara</option>
+                    <option value="Rumah Orang Tua">Rumah Orang Tua</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>Plih 2 hobi yang paling disukai:</td>
+                <td>
+                  <input type="checkbox" name="hobi" id="hobi" value="Science" /> Science <br />
+                  <input type="checkbox" name="hobi" id="hobi" value="Technology" /> Technology <br />
+                  <input type="checkbox" name="hobi" id="hobi" value="Art" /> Art <br />
+                  <input type="checkbox" name="hobi" id="hobi" value="Sport" /> Sport <br />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button type="submit">Submit</button>
+                  <button type="reset">Reset</button>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </main>
+    </center>
+  </body>
+</html>
