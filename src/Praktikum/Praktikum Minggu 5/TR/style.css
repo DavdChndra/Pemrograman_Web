@@ -1,0 +1,94 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #468a9a;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: white;
+}
+
+main {
+  max-width: 700px;
+  margin: 60px auto;
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+#akses-ditolak {
+  display: none;
+  font-size: 48px;
+  color: #b80000;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 200px;
+  background-color: white;
+  padding: 30px 0;
+}
+
+h2 {
+  color: #a70000;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #a70000;
+  box-shadow: 0 0 5px rgba(167, 0, 0, 0.5);
+}
+
+button {
+  background-color: #a70000;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 18px;
+  margin: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #820000;
+}
+
+#hasil {
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.fade {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

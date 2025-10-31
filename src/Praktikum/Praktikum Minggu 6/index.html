@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <title>Minggu 6 - Bootstrap</title>
+    <style>
+      body {
+        font-family: monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="border-bottom border-3 border-black mt-3">
+      <p class="text-center fw-bold fs-2">Galeri Wisata Jakarta</p>
+    </header>
+    <main class="container p-0 p-md-5">
+      <div class="row p-4 p-md-0 mb-5">
+        <div class="col-12 col-md-4 p-5 p-md-0">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Coat_of_arms_of_Jakarta.svg" alt="Logo Jakarta" style="max-height: 200px" class="d-block mx-auto" />
+        </div>
+        <div class="col-12 col-md-8 border border-3 border-black p-4 rounded rounded-3">
+          <div class="collapse mb-3" id="info">
+            <div class="card card-body text-danger"><button type="button" class="btn-close mb-3" data-bs-toggle="collapse" data-bs-target="#info" aria-expanded="false" aria-controls="info"></button> Hehe... Maaf ya fitur pencarian belum bisa...</div>
+          </div>
+          <p class="fs-4">Mau Liburan ke Mana Hari Ini?</p>
+          <form action="">
+            <div class="NamaWisata mb-3">
+              <label for="nama_wisata" class="form-label">Nama Wisata / Lokasi Wisata</label>
+              <input type="text" id="nama_wisata" class="form-control" aria-describedby="nama_wisata" />
+              <div id="nama_wisata" class="form-text">Masukkan nama tempat wisata / lokasi wisata yang mau kamu cari ya...</div>
+            </div>
+            <div class="KategoriWisata mb-3">
+              <label for="kategori_wisata" class="form-label">Kategori Wisata</label>
+              <select class="form-select" aria-label="Default select example" id="kategori_wisata" aria-describedby="kategori_wisata">
+                <option selected disabled>Pilih salah satu kategori wisata</option>
+                <option value="Pantai">Pantai</option>
+                <option value="Sejarah">Sejarah</option>
+                <option value="Kuliner">Kuliner</option>
+              </select>
+              <div id="kategori_wisata" class="form-text">Pilih kategori wisata yang mau kamu cari ya...</div>
+            </div>
+            <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#info" aria-expanded="false" aria-controls="info">Cari</button>
+          </form>
+        </div>
+      </div>
+      <div class="table-responsive p-5 p-md-0">
+        <p class="fw-bold fs-3">List Tempat Wisata Di Jakarta</p>
+        <caption>
+          Mungkin tempat wisata belum sepenuhnya ada...
+        </caption>
+        <table class="table table-striped table-hover align-middl">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Gambar</th>
+              <th>Deskripsi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <td>
+                <img src="https://www.ruparupa.com/blog/wp-content/uploads/2022/03/Jakarta_Batavia_%C2%A9-CEphoto-Uwe-Aranas.jpg" alt="Kota Tua" class="d-block mx-auto" style="max-width: 200px" />
+              </td>
+              <td>Alamat: Jl. Taman Fatahillah No.1, Pinangsia, Jakarta Barat <br> Harga Tiket: Rp1.500–Rp4.000 <br> Jam Operasional: Selasa–Minggu, 09.00–15.00 WIB</td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td>
+                <img src="https://cdn-images-1.medium.com/v2/resize:fit:1000/1*V2DR9jxRNyhZKqqXPY1cSg.jpeg" alt="Monas" class="d-block mx-auto" style="max-width: 200px" />
+              </td>
+              <td>Alamat: Merdeka Square, Jalan Lapangan Monas, Gambir, Kecamatan Gambir, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10110</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
