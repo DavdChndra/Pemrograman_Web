@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Minggu 7</title>
+  </head>
+  <body>
+    <header class="bg-dark text-white text-center py-3">
+      <h1>Praktikum Pemrograman Web</h1>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Home</a>
+          <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a href="#tentang" class="nav-link">Tentang</a></li>
+              <li class="nav-item"><a href="#kontak" class="nav-link">Kontak</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container my-5">
+      <section id="tentang" class="mb-5">
+        <h2 class="text-center mb-4 text-black">Tentang Saya</h2>
+        <article class="p-4 bg-light rounded shadow-sm text-center">
+          <p>Saya David Chandra, saya merupakan mahasiswa S1 di Telkom University Prodi Teknologi Informasi Semester 5 dengan ketertarikan besar pada pengembangan perangkat lunak, khususnya di bidang Back-End Development dan Kecerdasan Buatan (AI). </p>
+        </article>
+      </section>
+
+      <section id="kontak">
+        <h2 class="text-center mb-4 text-black">Hubungi Saya</h2>
+        <form class="w-50 mx-auto" onsubmit="return kirimPesan()">
+          <div class="mb-3">
+            <label for="nama" class="form-label">Nama:</label>
+            <input type="text" id="nama" class="form-control" placeholder="Masukkan nama anda" />
+          </div>
+          <div class="mb-3">
+            <label for="pesan" class="form-label">Pesan:</label>
+            <textarea id="pesan" class="form-control" rows="3" placeholder="Tulis pesan anda..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Kirim</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+      <p>2025 | DavdChndra - 103062330056</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
