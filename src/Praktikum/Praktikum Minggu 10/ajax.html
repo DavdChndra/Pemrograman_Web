@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax | Minggu 10</title>
+</head>
+<body>
+    <button type="button" onclick="loadDoc()">Get Data</button>
+    <br>
+    <br>
+    <p id="demo"></p>
+
+    <script>
+        function loadDoc(){
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function(){
+                myFunction(this);
+            };
+            xhttp.open("GET", "cd_catalog.xml", true);
+            xhttp.send();
+        }
+        function myFunction(xml){
+             const xmlDoc = xml.responseXML;
+            const x = xmlDoc.getElementsByTagName("cd");
+            let data = "";
+            for (let i = 0; i < x.length; i++) {
+                data += x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue + "<br>";
+            }
+            document.getElementById("demo").innerHTML = data;
+        }
+    </script>
+</body>
+</html>

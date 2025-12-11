@@ -1,0 +1,79 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100dvh;
+  background-color: #273f4f;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: monospace;
+}
+
+.navbar-brand {
+  font-size: clamp(1rem, 2vw + 1rem, 1.5rem);
+}
+
+.nav-link {
+  color: #333;
+}
+.nav-link:hover {
+  background-color: #eee;
+  color: #000;
+}
+.nav-link.active {
+  background-color: #273f4f !important;
+  color: white !important;
+  font-weight: bold;
+}
+
+main {
+  flex: 1;
+}
+
+.bebek-animasi {
+  animation: jalan 1s linear infinite alternate;
+  position: relative;
+}
+
+@keyframes jalan {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 50px;
+  }
+}
+
+.card{
+  background-color: transparent !important;
+}
+.card-header{
+  background-color: #EFEEEA !important;
+}
+
+.logo {
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 575.98px) {
+  .navigasi {
+    padding: 0 25px !important;
+  }
+
+  .nav-link {
+    padding: 5px;
+  }
+
+  .Pengalaman {
+    max-height: 50dvh;
+    overflow-y: auto;
+    padding-right: 10px;
+    margin-top: 50px;
+  }
+}

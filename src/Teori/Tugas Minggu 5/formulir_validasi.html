@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Minggu 5 - JavaScript</title>
+  </head>
+  <body>
+    <div class="container p-5">
+      <div class="row">
+        <!-- Kolom kiri -->
+        <div class="col-12 col-md-4 mb-4 mb-md-0">
+          <div class="kiri rounded-3">
+            <h3 class="mb-4 px-3 py-2 bg-body">Form Validation <span class="fw-bold">JavaScript</span></h3>
+            <div class="p-3">
+              <h5 class="mb-3">Hasil Validasi</h5>
+              <p id="sapa" class="text-muted"></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kolom kanan (form) -->
+        <div class="col-12 col-md-8">
+          <div class="kanan p-5 rounded-3">
+            <h4 class="mb-4 fw-bold">Formulir</h4>
+            <form class="row g-3" onsubmit="main(event)">
+              <div class="col-12">
+                <label for="nama_lengkap" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="nama_lengkap" placeholder="Masukkan Nama Lengkap Anda" />
+                <div id="feedback_nama_lengkap"></div>
+              </div>
+
+              <div class="col-12">
+                <label for="email" class="form-label">Email</label>
+                <input type="text" class="form-control" id="email" placeholder="Masukkan Email Anda" />
+                <div id="feedback_email"></div>
+              </div>
+
+              <div class="col-12">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Masukkan Password Anda" />
+                <div id="feedback_password"></div>
+              </div>
+
+              <div class="col-auto">
+                <button class="btn btn-style w-100" type="submit">Kirim</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
